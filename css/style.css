@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  src: url('/fonts/Raleway.ttf');
+  font-family: Raleway;
+}
+@font-face {
+  src: url('/fonts/Raleway-Bold.ttf');
+  font-family: RalewayBold;
+}
+@font-face {
+  src: url('/fonts/Raleway-SemiBold.ttf');
+  font-family: RalewaySemi;
+}
+@keyframes Fadein {
+   100% {
+     opacity: 1;
+   }
+}
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  font-family: Raleway;
+  opacity: 0;
+  z-index: 1;
+  animation: 1s Fadein 0.5s forwards;
+}
+header h2 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+header nav {
+  display: flex;
+}
+header nav li {
+  list-style: none;
+  margin: 0 15px;
+}
+header nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0px 20px 0;
+  color: #000000;
+}
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 80px;
+}
+
+/* Home-section */
+
+#Home-section {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+#Home-section .background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.main-content {
+  opacity: 0;
+  animation: 1s Fadein 0.5s forwards;
+}
+.main-content h1 {
+  font-family: Raleway;
+  font-size: 35px;
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+.main-content a{
+   text-align: center;
+   text-decoration: none;
+   color: #ffffff;
+   border-radius: 4px;
+   background-color: #519DFF;
+   font-family: RalewaySemi;
+   padding: 10px 25px;
+}
+
+/* About-section */
+
+#About-section {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+}
+.main-text {
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 25px 25px;
+}
+.main-text h1{
+  font-family: Raleway;
+  font-weight: lighter;
+  color: #519DFF;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.main-text p {
+  font-family: RalewaySemi;
+  font-size: 18px;
+}
+
+/* Shop-section */
+
+#Shop-section {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.main-shop {
+  font-family: Raleway;
+}
+.main-shop img {
+  margin-bottom: 20px;
+}
+.main-shop h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+.main-shop a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #519DFF;
+  padding: 10px 20px;
+}
