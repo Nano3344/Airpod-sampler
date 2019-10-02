@@ -17,3 +17,18 @@ $(function() {
      }
   });
 });
+
+var modal = document.getElementById("themodal");
+var closebtn = document.getElementById("closebtn");
+
+window.addEventListener('load', loadModal);
+if(closebtn) {
+closebtn.addEventListener('click', closeModal);
+}
+function loadModal() {
+  document.getElementById("themodal").style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById("themodal").style.display = 'none';
+}

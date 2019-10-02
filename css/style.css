@@ -20,6 +20,45 @@
      opacity: 1;
    }
 }
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #ffffff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.closebtn {
+  float: right;
+  color: grey;
+  font-size: 30px;
+}
+.closebtn:hover {
+  color: black;
+  cursor: pointer;
+}
+.modal-header h2 {
+  text-align: center;
+  font-family: RalewayBold;
+}
+.modal-header p {
+  font-family: Raleway;
+}
+.modal-header button {
+  font-family: RalewaySemi;
+  background-color: #519DFF;
+  padding: 10px 20px 20px;
+}
 header {
   position: absolute;
   width: 100%;
@@ -143,5 +182,6 @@ section {
   color: #ffffff;
   border-radius: 4px;
   background-color: #519DFF;
+  font-family: RalewaySemi;
   padding: 10px 20px;
 }
