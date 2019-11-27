@@ -20,11 +20,12 @@ $(function() {
 
 var modal = document.getElementById("themodal");
 var closebtn = document.getElementById("closebtn");
+var okbtn = document.getElementById("okbutton");
 
 window.addEventListener('load', loadModal);
-if(closebtn) {
 closebtn.addEventListener('click', closeModal);
-}
+okbtn.addEventListener('click', closeModal);
+
 function loadModal() {
   document.getElementById("themodal").style.display = 'block';
 }

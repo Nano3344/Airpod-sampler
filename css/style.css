@@ -54,10 +54,16 @@
 .modal-header p {
   font-family: Raleway;
 }
-.modal-header button {
+.modal-header .button {
   font-family: RalewaySemi;
   background-color: #519DFF;
-  padding: 10px 20px 20px;
+  padding: 10px 10px 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+.modal-header .button:hover {
+  cursor: pointer;
 }
 header {
   position: absolute;
@@ -184,4 +190,16 @@ section {
   background-color: #519DFF;
   font-family: RalewaySemi;
   padding: 10px 20px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #424242;
+  padding: 15px;
+}
+footer p {
+  font-family: RalewayBold;
+  color: white;
 }
