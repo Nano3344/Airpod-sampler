@@ -94,9 +94,48 @@ header nav li a {
   padding: 0px 20px 0;
   color: #000000;
 }
+.full-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+  background-color: black;
+}
+.full-nav .content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.full-nav .content li {
+  list-style: none;
+}
+.full-nav .content li a {
+  font-size: 35px;
+  color: white;
+  font-family: RalewayBold;
+  text-decoration: none;
+  opacity: 1;
+}
+header .burger-nav {
+  display: none;
+}
+header .burger-nav:hover {
+  cursor: pointer;
+}
+header .burger-nav div{
+width: 35px;
+height: 5px;
+margin: 5px;
+border-radius: 5px;
+background-color: #000000;
+}
 @media (max-width: 600px) {
   header {
-    padding: 35px 30px 0px;
+    padding: 35px 60px 0px;
   }
   header h2 {
     font-size: 18px;
@@ -104,6 +143,12 @@ header nav li a {
   header nav li a {
     font-size: 13px;
     padding: 0px 6px 0;
+  }
+  header nav {
+    display: none;
+  }
+  header .burger-nav {
+    display: inline-block;
   }
 }
 section {
