@@ -26,7 +26,6 @@
   left: 0;
   top: 0;
   z-index: 1;
-  overflow: auto;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -94,6 +93,9 @@ header nav li a {
   padding: 0px 20px 0;
   color: #000000;
 }
+header nav li .shopping {
+  margin-bottom: 30px;
+}
 .full-nav {
   display: none;
   position: fixed;
@@ -119,6 +121,74 @@ header nav li a {
   font-family: RalewayBold;
   text-decoration: none;
   opacity: 1;
+}
+.payment-wrapper-2 {
+  display: none;
+}
+.payment-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+.payment-form {
+  background-color: white;
+  padding: 40px;
+  font-family: Raleway;
+  text-align: center;
+  z-index: 2;
+}
+.payment-form h2{
+  font-size: 35px;
+font-weight: bolder;
+}
+.payment-form .input-section {
+  padding: 10px;
+}
+.payment-form .last-input-section .item{
+  padding: 10px;
+}
+.payment-form .input-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+}
+.payment-form .last-input-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+}
+.payment-form .button-section {
+  margin-top: 25px;
+}
+.payment-form .button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.payment-form .button-section p:hover {
+  cursor: pointer;
+}
+.payment-form .button-section .pay-button p {
+  color: white;
+  background-color: #519DFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.payment-form .button-section .cancel-button p{
+  color: white;
+  background-color: #F44336;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 header .burger-nav {
   display: none;
@@ -245,13 +315,16 @@ section {
   font-weight: lighter;
   margin-bottom: 30px;
 }
-.main-shop a {
+.main-shop p {
   text-decoration: none;
   color: #ffffff;
   border-radius: 4px;
   background-color: #519DFF;
   font-family: RalewaySemi;
   padding: 10px 20px;
+}
+.main-shop p:hover {
+  cursor: pointer;
 }
 footer {
   width: 100%;

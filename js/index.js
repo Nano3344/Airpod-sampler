@@ -49,3 +49,19 @@ function loadNav() {
 function closeNav() {
   document.getElementById("full-nav").style.display = 'none';
 }
+
+// Payment-Form
+
+var buyButton = document.querySelector(".buy-now");
+var paymentForm = document.querySelector(".paymentForm");
+var payButton = document.querySelector(".pay-button");
+var cancelButton = document.querySelector(".cancel-button");
+buyButton.addEventListener('click', loadForm);
+cancelButton.addEventListener('click', closeForm);
+
+function loadForm() {
+  document.getElementById("payment-wrapper-2").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("payment-wrapper-2").style.display = "none";
+}
