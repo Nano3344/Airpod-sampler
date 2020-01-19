@@ -48,13 +48,15 @@
 }
 .modal-header h2 {
   text-align: center;
-  font-family: RalewayBold;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 .modal-header p {
   font-family: Raleway;
 }
 .modal-header .button {
-  font-family: RalewaySemi;
+  font-family: sans-serif;
+  font-weight: bold;
   background-color: #519DFF;
   padding: 10px 10px 10px;
   margin-top: 10px;
@@ -94,8 +96,17 @@ header nav li a {
   padding: 0px 20px 0;
   color: #000000;
 }
-header nav li .shopping {
-  margin-bottom: 30px;
+
+/* Full Screen Navigation */
+
+.nav-background {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
 }
 .full-nav {
   display: none;
@@ -103,8 +114,17 @@ header nav li .shopping {
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.7;
-  background-color: black;
+}
+.full-nav .closeNav {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
+.full-nav .closeNav:hover {
+  cursor: pointer;
 }
 .full-nav .content {
   height: 100vh;
@@ -119,10 +139,14 @@ header nav li .shopping {
 .full-nav .content li a {
   font-size: 35px;
   color: white;
-  font-family: RalewayBold;
+  font-family: sans-serif;
+  font-weight: bold;
   text-decoration: none;
   opacity: 1;
 }
+
+/* Payment Section */
+
 .payment-wrapper-2 {
   display: none;
 }
@@ -134,8 +158,6 @@ header nav li .shopping {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 0.8;
   z-index: 1;
 }
 .payment-form {
@@ -147,19 +169,19 @@ header nav li .shopping {
 }
 .payment-form h2{
   font-size: 35px;
-font-weight: bolder;
+  font-weight: bolder;
 }
 .payment-form .input-section {
-  padding: 10px;
-}
-.payment-form .last-input-section .item{
   padding: 10px;
 }
 .payment-form .input-section input[type="text"] {
   width: 100%;
   padding: 10px;
 }
-.payment-form .last-input-section input[type="text"] {
+.payment-form .last-input-section .item{
+  padding: 10px;
+}
+.payment-form .last-input-section .item input[type="text"] {
   width: 100%;
   padding: 10px;
 }

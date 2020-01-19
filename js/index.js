@@ -39,15 +39,18 @@ function closeModal() {
 var burgerNav = document.querySelector(".burger-nav");
 var fullNav = document.querySelector(".full-nav");
 var closeBtn = document.querySelector(".closeNav");
+var navBackground = document.querySelector(".nav-background");
 burgerNav.addEventListener('click', loadNav);
 closeBtn.addEventListener('click', closeNav);
 
 function loadNav() {
-  document.getElementById("full-nav").style.display = 'block';
+  fullNav.style.display = 'block';
+  navBackground.style.display = 'block';
 }
 
 function closeNav() {
-  document.getElementById("full-nav").style.display = 'none';
+  fullNav.style.display = 'none';
+  navBackground.style.display = 'none';
 }
 
 // Payment-Form
@@ -61,7 +64,9 @@ cancelButton.addEventListener('click', closeForm);
 
 function loadForm() {
   document.getElementById("payment-wrapper-2").style.display = "block";
+  navBackground.style.display = "block";
 }
 function closeForm() {
   document.getElementById("payment-wrapper-2").style.display = "none";
+  navBackground.style.display = "none";
 }
