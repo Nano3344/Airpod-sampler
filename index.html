@@ -8,7 +8,7 @@
     <title>Airpod website</title>
   </head>
   <body>
-    <div id="themodal" class="modal">
+  <!--  <div id="themodal" class="modal">
       <div class="modal-content">
        <div class="modal-header">
        <span id="closebtn" class="closebtn">&times;</span>
@@ -16,10 +16,9 @@
        <p>I do not own any right for this product and do not intent to commersialize this
           product. This website is just for the viewing purposes of my front-end web development
           skills.</p>
-
        <p class="button" id="okbutton">OK</p>
      </div>
-      </div>
+   </div>-->
     </div>
     <div class="nav-background"></div>
     <div id="full-nav" class="full-nav">
@@ -61,7 +60,7 @@
   </div>
 </div>
 </div>
-      <header>
+      <header class="header">
           <h2>Airpods</h2>
         <nav>
           <li><a href="#Home-section">Home</a></li>
@@ -76,11 +75,11 @@
       </header>
 
       <section id="Home-section">
-        <div class="background-image" style="background-image: url(pictures/Background.jpg)"></div>
           <div class="main-content">
-           <h1>Listen with the Future</h1>
-           <a href="#Shop-section">Shop</a>
+           <h1 class="main-header">Listen with the Future</h1>
+           <a class="main-button" href="#Shop-section">Shop</a>
           </div>
+          <img class="main-image" src="pictures/Airpods-background.png" alt="">
       </section>
       <section id="About-section">
          <div class="main-text">
@@ -106,5 +105,12 @@
        <p>Created by Malik Ebers</p>
       </footer>
       <script src="js/index.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script>
+         gsap.from('.header', {opacity: 0, duration: 1})
+         gsap.from('.main-header', {opacity: 0, duration: 1, y: 100})
+         gsap.from('.main-button', {opacity: 0, duration: 2, y: 200})
+         gsap.from('.main-image', {duration: 1, opacity: 0, y: 200})
+      </script>
   </body>
 </html>
