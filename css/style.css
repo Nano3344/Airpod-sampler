@@ -350,6 +350,19 @@ section:not(#Home-section) {
     bottom: 0;
   }
 }
+
+@media (max-width: 400px) {
+  .main-content h1 {
+    font-size: 25px;
+  }
+  #Home-section img {
+    width: 250px;
+    position: relative;
+    left: -5%;
+    bottom: 0px;
+    transform: rotate(-30deg);
+  }
+}
 /* About-section */
 
 #About-section {
