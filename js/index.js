@@ -18,7 +18,7 @@ $(function() {
   });
 });
 
-var modal = document.getElementById("themodal");
+/* var modal = document.getElementById("themodal");
 var closebtn = document.getElementById("closebtn");
 var okbtn = document.getElementById("okbutton");
 
@@ -32,7 +32,7 @@ function loadModal() {
 
 function closeModal() {
   document.getElementById("themodal").style.display = 'none';
-}
+}*/
 
 // Navbar Animation
 
