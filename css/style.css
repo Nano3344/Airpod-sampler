@@ -7,11 +7,11 @@ body {
   overflow-x: hidden;
 }
 @font-face {
-  src: url('./fonts/Raleway.ttf');
+  src: url('/fonts/Raleway.ttf');
   font-family: Raleway;
 }
 @font-face {
-  src: url('./fonts/Raleway-Bold.ttf');
+  src: url('/fonts/Raleway-Bold.ttf');
   font-family: RalewayBold;
 }
 .modal {
