@@ -8,18 +8,9 @@
     <title>Airpod website</title>
   </head>
   <body>
-  <!--  <div id="themodal" class="modal">
-      <div class="modal-content">
-       <div class="modal-header">
-       <span id="closebtn" class="closebtn">&times;</span>
-       <h2>NOTE</h2>
-       <p>I do not own any right for this product and do not intent to commersialize this
-          product. This website is just for the viewing purposes of my front-end web development
-          skills.</p>
-       <p class="button" id="okbutton">OK</p>
-     </div>
-   </div>-->
-    </div>
+
+    <!-- Full-Nav -->
+
     <div class="nav-background"></div>
     <div id="full-nav" class="full-nav">
       <span id="closeNav" class="closeNav">&times;</span>
@@ -29,6 +20,9 @@
       <li><a href="#Shop-section">Shop</a></li>
     </div>
     </div>
+
+    <!-- Payment Form -->
+
     <div class="payment-wrapper-2" id="payment-wrapper-2">
     <div class="payment-wrapper">
     <div class="payment-form">
@@ -60,6 +54,9 @@
   </div>
 </div>
 </div>
+
+     <!-- Header -->
+
       <header class="header">
           <h2>Airpods</h2>
         <nav>
@@ -74,6 +71,8 @@
         </div>
       </header>
 
+      <!-- Home -->
+
       <section id="Home-section">
           <div class="main-content">
            <h1 class="main-header">Listen with the Future</h1>
@@ -82,7 +81,10 @@
           <img class="main-image" src="pictures/Airpods-background.png" alt="">
           <div class="main-triangle"></div>
       </section>
-      <section id="About-section">
+
+     <!-- About -->
+
+      <section id="About-section" class="fade-in">
          <div class="main-text">
            <h1>The Airpods</h1>
            <p>They do not only have the style, but also the Quality. With the new Apple H1
@@ -94,17 +96,26 @@
  listen to something like music and also when you have a phone call in case.</p>
          </div>
       </section>
-      <section id="Shop-section">
+
+      <!-- Shop -->
+
+      <section id="Shop-section" class="fade-in">
       <div class="main-shop">
       <img src="pictures/Airpods.png">
       <h2>179,00$</h2>
       <p class="buy-now">Buy Now</p>
     </div>
       </section>
+
+      <!-- footer -->
+
       <footer>
        <a href="https://github.com/Nano3344"><img src="pictures/github.png"></a>
        <p>Created by Malik Ebers</p>
       </footer>
+
+      <!-- Javascript -->
+
       <script src="js/index.js"></script>
       <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
       <script>
@@ -114,5 +125,6 @@
          gsap.from('.main-image', {duration: 1, opacity: 0, y: 200})
          gsap.from('.main-triangle', {duration: 1, opacity: 0, y: 200})
       </script>
+
   </body>
 </html>

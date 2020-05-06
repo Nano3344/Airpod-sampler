@@ -18,21 +18,30 @@ $(function() {
   });
 });
 
-/* var modal = document.getElementById("themodal");
-var closebtn = document.getElementById("closebtn");
-var okbtn = document.getElementById("okbutton");
+// Fade-in on scroll
 
-window.addEventListener('load', loadModal);
-closebtn.addEventListener('click', closeModal);
-okbtn.addEventListener('click', closeModal);
+const fader = document.querySelectorAll('.fade-in');
 
-function loadModal() {
-  document.getElementById("themodal").style.display = 'block';
-}
+const options = {
+  threshold: 0.5,
+  rootMargin: "0px 0px -100px 0px"
+};
 
-function closeModal() {
-  document.getElementById("themodal").style.display = 'none';
-}*/
+const fadeOnScroll = new IntersectionObserver(function(
+  entries, fadeOnScroll) {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('appear');
+      fadeOnScroll.unobserve(entry.target);
+    }
+  });
+  }, options);
+
+  fader.forEach(fader => {
+    fadeOnScroll.observe(fader);
+  })
 
 // Navbar Animation
 

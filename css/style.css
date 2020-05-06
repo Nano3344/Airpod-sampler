@@ -11,54 +11,15 @@ body {
   font-family: Raleway;
 }
 @font-face {
-  src: url('/fonts/Raleway-Bold.ttf');
+  src: url('/fonts/Ralewaybold.ttf');
   font-family: RalewayBold;
 }
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
-.modal-content {
-  background-color: #ffffff;
-  margin: 20% auto;
-  padding: 20px;
-  width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.closebtn {
-  float: right;
-  color: grey;
-  font-size: 30px;
-}
-.closebtn:hover {
-  color: black;
-  cursor: pointer;
-}
-.modal-header h2 {
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-.modal-header p {
-  font-family: Raleway;
-}
-.modal-header .button {
-  font-family: sans-serif;
-  font-weight: bold;
-  background-color: #519DFF;
-  padding: 10px 10px 10px;
-  margin-top: 10px;
-  text-align: center;
-  color: white;
-}
-.modal-header .button:hover {
-  cursor: pointer;
+.fade-in.appear {
+  opacity: 1;
 }
 header {
   position: absolute;
